@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+}
+
+/* SF Pro Display */
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 400;
+  src: url('../fonts/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 700;
+  src: url('../fonts/SF-Pro-Text-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 500;
+  src: url('../fonts/SF-Pro-Display-Medium.otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 800;
+  src: url('../fonts/SF-Pro-Display-Heavy.otf');
+}
