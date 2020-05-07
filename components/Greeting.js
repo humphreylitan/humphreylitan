@@ -2,12 +2,10 @@ import styled, { keyframes } from 'styled-components'
 
 const slideUp = keyframes`
   from { 
-    opacity: 0;
     transform: translateY(100%); 
   }
   to { 
     transform: translateX(0); 
-    opacity: 1;
   }
 `
 const Text = styled.div`
@@ -17,9 +15,7 @@ const Text = styled.div`
   display: flex;
   flex-wrap: wrap;
   line-height: 100%;
-  background: linear-gradient(105.49deg, #2591DF -5.27%, #B719EF 43.58%, #E80680 91.41%);
-  background-clip: text;
-  color: transparent;
+  color: #252841;
   transition: font-size 240ms;
 
   @media (min-width: 768px) {
@@ -27,7 +23,7 @@ const Text = styled.div`
   }
 
   @media (min-width: 992px) {
-    font-size: 96px;
+    font-size: 80px;
   }
 
 `
@@ -38,7 +34,7 @@ const Wrap = styled.div`
   > div {
     transform: translateY(100%);
     margin-right: 8px;
-    animation: ${slideUp} 1.5s forwards cubic-bezier(0.25, 1, 0.5, 1);
+    animation: ${slideUp} 400ms forwards cubic-bezier(0.25, 1, 0.5, 1);
 
     @media (min-width: 1200px) {
       margin-right: 16px;
@@ -52,7 +48,7 @@ const Word = styled.div`
 
 const Name = styled.div`
   font-weight: 800;
-  padding: 0 8px 8px 0;
+  padding-bottom: 8px;
 `
 const Greeting = () => {
   return (
@@ -63,12 +59,12 @@ const Greeting = () => {
         </Word>
       </Wrap>
       <Wrap>
-        <Word style={{ animationDelay: '200ms'}}>
+        <Word style={{ animationDelay: '180ms'}}>
           I'm
         </Word>
       </Wrap>
       <Wrap>
-        <Name style={{ animationDelay: '400ms'}}>
+        <Name style={{ animationDelay: '360ms'}}>
           Humphrey
         </Name>
       </Wrap>
