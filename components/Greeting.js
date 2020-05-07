@@ -20,8 +20,13 @@ const Text = styled.div`
   background: linear-gradient(105.49deg, #2591DF -5.27%, #B719EF 43.58%, #E80680 91.41%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: font-size 240ms;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
+    font-size: 64px;
+  }
+
+  @media (min-width: 992px) {
     font-size: 96px;
   }
 
