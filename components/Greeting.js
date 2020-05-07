@@ -19,7 +19,7 @@ const Text = styled.div`
   line-height: 100%;
   background: linear-gradient(105.49deg, #2591DF -5.27%, #B719EF 43.58%, #E80680 91.41%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   transition: font-size 240ms;
 
   @media (min-width: 768px) {
