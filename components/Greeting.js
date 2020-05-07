@@ -34,7 +34,7 @@ const Wrap = styled.div`
   > div {
     transform: translateY(100%);
     margin-right: 8px;
-    animation: ${slideUp} 400ms forwards cubic-bezier(0.25, 1, 0.5, 1);
+    animation: ${slideUp} 800ms forwards cubic-bezier(0.25, 1, 0.5, 1);
 
     @media (min-width: 1200px) {
       margin-right: 16px;
@@ -51,23 +51,31 @@ const Name = styled.div`
   padding-bottom: 8px;
 `
 const Greeting = () => {
+  const words = [
+    {
+      string: "Hello,",
+      component: Word
+    },
+    {
+      string: "I'm",
+      component: Word
+    },
+    {
+      string: "Humphrey",
+      component: Name
+    }
+  ]
   return (
     <Text>
-      <Wrap>
-        <Word>
-          Hello,
-        </Word>
-      </Wrap>
-      <Wrap>
-        <Word style={{ animationDelay: '180ms'}}>
-          I'm
-        </Word>
-      </Wrap>
-      <Wrap>
-        <Name style={{ animationDelay: '360ms'}}>
-          Humphrey
-        </Name>
-      </Wrap>
+      {
+        words.map((word, idx) => 
+          <Wrap>
+            <word.component style={{ animationDelay: `${(idx + 1) * 200}ms`}}>
+              {word.string}
+            </word.component>
+          </Wrap>
+        )
+      }
     </Text>
   )
 }
