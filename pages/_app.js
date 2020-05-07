@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Humphrey Litan</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Component {...pageProps} />
     </>
