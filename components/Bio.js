@@ -84,11 +84,8 @@ const Bio = () => {
       <Line style={{animationDelay: '1.1s'}}>
         I’m a front-end web developer and designer.
       </Line>
-      <Line style={{animationDelay: '1.2s'}}>
-        I like bringing ideas to life. 🎨 👨‍💻
-      </Line>
 
-      <Line style={{animationDelay: '1.4s'}} padded>
+      <Line style={{animationDelay: '1.2s'}} padded>
         {
           socials.map(social =>
             <Anchor href={social.link} target="_blank">
